@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>朱丹 | Creative Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+      document.documentElement.classList.add('js-enabled');
+    </script>
+  </head>
+  <body>
+    <canvas id="sandCanvas" aria-hidden="true"></canvas>
+
+    <div class="page-shell">
+      <div class="intro-overlay" id="introOverlay">
+        <div class="intro-line intro-line-top"></div>
+        <div class="intro-content">
+          <span class="intro-kicker">PORTFOLIO / 2026</span>
+          <h1>朱丹</h1>
+          <p>内容策略 / 产品运营 / AI-Native Builder</p>
+        </div>
+        <div class="intro-line intro-line-bottom"></div>
+      </div>
+
+      <header class="site-header">
+        <div>
+          <span class="eyebrow">ZHU DAN</span>
+          <h1>Creative Portfolio</h1>
+        </div>
+        <button class="ghost-btn" id="enterBtn">Enter</button>
+      </header>
+
+      <main>
+        <section class="hero section" id="hero">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">About</span>
+            <h2>内容策略 / 产品运营 / AI-Native Builder</h2>
+            <p>
+              我是一名对内容策略、产品体验与 AI 工具实践都保持高敏感度的创作者型运营。过去的经历让我习惯从复杂信息里梳理结构，搭建字段、规则与协作机制，再把它们转化成真正可用的业务方案。
+              我也喜欢亲手把想法做出来：从交互概念到网页原型，从策略推导到上线验证。相比只停留在“提出想法”，我更在意把抽象判断变成具体体验。
+              目前我正在持续打磨一组 AI-Native 的个人网页作品，也在寻找能同时连接内容、产品与创造力的机会。
+            </p>
+            <div class="contact-inline">
+              <a href="mailto:Wwddd2023@163.com">Wwddd2023@163.com</a>
+              <a href="tel:15220506800">152 2050 6800</a>
+              <span>立即到岗</span>
+            </div>
+          </div>
+
+          <div class="hero-stage reveal" id="heroStage" data-mode="experience">
+            <article class="hero-card is-active" data-target="experience" tabindex="0">
+              <span class="hero-card-index">01</span>
+              <h3>Experience</h3>
+              <p>内容策略、产运协同、结构化问题解决。</p>
+            </article>
+            <article class="hero-card" data-target="projects" tabindex="0">
+              <span class="hero-card-index">02</span>
+              <h3>Projects</h3>
+              <p>AI-Native 网页、互动原型与个人实验。</p>
+            </article>
+          </div>
+
+          <aside class="hero-detail reveal" id="heroDetail">
+            <div class="hero-detail-panel is-active" data-panel="experience">
+              <span class="eyebrow">Selected / Experience</span>
+              <h3>从业务问题到落地结果</h3>
+              <ul>
+                <li>番茄音乐：音乐线索平台 0-1、标签体系、数据治理。</li>
+                <li>滴滴巴西：竞品探查、获客策略、试点转化验证。</li>
+                <li>擅长把复杂问题拆成结构，再推进执行。</li>
+              </ul>
+              <a class="inline-link" href="#experience">View timeline</a>
+            </div>
+            <div class="hero-detail-panel" data-panel="projects">
+              <span class="eyebrow">Selected / Projects</span>
+              <h3>把策略感转成可体验的页面</h3>
+              <ul>
+                <li>Discovery Pulse：信息探索与洞察呈现。</li>
+                <li>Short Drama LLM：叙事体验与生成式互动。</li>
+                <li>Meditation in Peace：音频、冥想与舒缓动效。</li>
+              </ul>
+              <a class="inline-link" href="#projects">Open showcase</a>
+            </div>
+          </aside>
+        </section>
+
+        <section class="experience section" id="experience">
+          <div class="section-head reveal">
+            <span class="eyebrow">Experience</span>
+            <h2>经历时间线</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-card reveal is-open">
+              <button class="timeline-trigger" type="button">
+                <div>
+                  <span class="timeline-date">2026.04 - 至今</span>
+                  <h3>字节跳动｜番茄音乐｜内容策略运营（产运方向）</h3>
+                </div>
+                <span class="timeline-symbol">+</span>
+              </button>
+              <div class="timeline-content">
+                <div class="timeline-inner">
+                  <div class="timeline-meta">
+                    <span>音乐媒资平台 0-1 建设</span>
+                    <span>歌手品类标签与消费分级</span>
+                  </div>
+                  <p>
+                    围绕内部 B 端音乐线索工具平台，主导音乐线索采集、字段架构与数据治理。通过拆解多平台榜单、设计字段体系、推动多方口径评审与质量治理，完成千万级歌曲 / 艺人数据标准化落库，打通内部检索入口。
+                  </p>
+                  <ul>
+                    <li>从 0 到 1 搭建线索字段架构，覆盖 5 平台 70+ 榜单与万余首高潜歌曲。</li>
+                    <li>建立覆盖率 + 准确率的数据质量验收机制，联动数仓与研发补齐关键字段。</li>
+                    <li>搭建歌手品类与消费分级规则，优化验证集表现并服务后续版权采买与治理场景。</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-card reveal">
+              <button class="timeline-trigger" type="button">
+                <div>
+                  <span class="timeline-date">2025.12 - 2026.03</span>
+                  <h3>滴滴出行｜国际事业群 IBG Food SaaS｜巴西外卖策略运营</h3>
+                </div>
+                <span class="timeline-symbol">+</span>
+              </button>
+              <div class="timeline-content">
+                <div class="timeline-inner">
+                  <div class="timeline-meta">
+                    <span>竞品探查</span>
+                    <span>获客策略</span>
+                    <span>市场验证</span>
+                  </div>
+                  <p>
+                    面对前线销售拓客无方向、市场缺少现成本地化商机策略的问题，我从零完成市场观测、竞争图谱与落地验证。通过对 Google Maps 与 Linktree 等入口的逆向测绘，提炼出低成本高转化的拓客路径。
+                  </p>
+                  <ul>
+                    <li>抽样 100+ 商户并构建三层竞争图谱，识别高潜转化对象。</li>
+                    <li>提出“平台引流 + 配送履约 + 0 佣金”的差异化策略。</li>
+                    <li>配套销售话术被负责人采纳，试点触达并转化 10+ 商户。</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-card reveal">
+              <button class="timeline-trigger" type="button">
+                <div>
+                  <span class="timeline-date">2025.09 - 2026.11 / 2021.09 - 2025.06</span>
+                  <h3>教育经历｜香港中文大学 & 北京第二外国语学院</h3>
+                </div>
+                <span class="timeline-symbol">+</span>
+              </button>
+              <div class="timeline-content">
+                <div class="timeline-inner">
+                  <div class="timeline-meta">
+                    <span>政府政治</span>
+                    <span>国际事务与国际关系</span>
+                    <span>国家奖学金</span>
+                  </div>
+                  <p>
+                    我的学术训练让我长期面对复杂议题、跨学科信息与结构化表达，也塑造了我处理内容、研究与判断的方式。奖学金与前 10% 的绩点表现，则是我持续投入与高标准执行的结果。
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="projects section" id="projects">
+          <div class="section-head reveal">
+            <span class="eyebrow">Projects</span>
+            <h2>AI 作品展厅</h2>
+          </div>
+
+          <div class="project-layout">
+            <div class="project-grid" id="projectGrid">
+              <a class="project-card reveal is-active" data-project="discovery-pulse" data-url="https://discovery-pulse.netlify.app/" href="https://discovery-pulse.netlify.app/" target="_blank" rel="noreferrer">
+                <span class="project-number">01</span>
+                <div class="project-cover gradient-a">
+                  <div class="cover-badge">LIVE · 01</div>
+                  <div class="pulse-grid"></div>
+                  <svg class="pulse-icon" viewBox="0 0 120 72" preserveAspectRatio="none" aria-hidden="true">
+                    <polyline class="pulse-icon-line pulse-icon-line-back" points="0,42 22,42 34,42 40,18 48,56 58,34 78,34 88,54 98,30 120,30"></polyline>
+                    <polyline class="pulse-icon-line pulse-icon-line-front" points="0,54 20,54 32,54 40,30 47,66 55,42 74,42 84,66 94,40 120,40"></polyline>
+                  </svg>
+                  <div class="cover-caption cover-caption-bottom">Discovery Pulse</div>
+                </div>
+                <div class="project-body">
+                  <h3>Discovery Pulse</h3>
+                  <p>信息洞察与探索体验</p>
+                  <div class="project-tags"><span>洞察探索</span><span>信息结构</span></div>
+                </div>
+              </a>
+
+              <a class="project-card reveal" data-project="short-drama-llm" data-url="https://short-drama-llm.netlify.app/" href="https://short-drama-llm.netlify.app/" target="_blank" rel="noreferrer">
+                <span class="project-number">02</span>
+                <div class="project-cover gradient-b">
+                  <div class="cover-badge">LIVE · 02</div>
+                  <div class="film-frame"></div>
+                  <div class="script-glow"></div>
+                  <div class="script-lines" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="cover-caption cover-caption-center">A short drama<br />in three acts.</div>
+                </div>
+                <div class="project-body">
+                  <h3>Short Drama LLM</h3>
+                  <p>短剧叙事与生成式交互</p>
+                  <div class="project-tags"><span>叙事生成</span><span>LLM</span></div>
+                </div>
+              </a>
+
+              <a class="project-card reveal" data-project="meditation-in-peace08" data-url="https://meditation-in-peace08.netlify.app/" href="https://meditation-in-peace08.netlify.app/" target="_blank" rel="noreferrer">
+                <span class="project-number">03</span>
+                <div class="project-cover gradient-c">
+                  <div class="cover-badge">LIVE · 03</div>
+                  <div class="breathe-orb">
+                    <span class="breathe-ring breathe-ring-1"></span>
+                    <span class="breathe-ring breathe-ring-2"></span>
+                    <span class="breathe-core"></span>
+                  </div>
+                  <div class="cover-caption cover-caption-soft">breathe in.</div>
+                </div>
+                <div class="project-body">
+                  <h3>Meditation in Peace</h3>
+                  <p>白噪音冥想与舒缓动效</p>
+                  <div class="project-tags"><span>冥想疗愈</span><span>音频体验</span></div>
+                </div>
+              </a>
+            </div>
+
+            <aside class="project-detail reveal glass-card" id="projectDetail">
+              <div class="project-detail-panel is-active" data-detail="discovery-pulse">
+                <span class="eyebrow">01 / Discovery Pulse</span>
+                <h3>用更有节奏感的方式组织洞察信息</h3>
+                <p>
+                  这个作品更偏向信息探索与洞察呈现。我希望它在“内容组织”与“浏览节奏”之间取得平衡，让用户不只是看见信息，而是被引导着逐步发现结构。
+                </p>
+                <ul>
+                  <li>定位：Insight / Exploration</li>
+                  <li>关注点：信息层级、节奏感、视觉引导</li>
+                  <li>角色：独立设计与实现</li>
+                </ul>
+                <a class="primary-link" href="https://discovery-pulse.netlify.app/" target="_blank" rel="noreferrer">Visit live site</a>
+              </div>
+
+              <div class="project-detail-panel" data-detail="short-drama-llm">
+                <span class="eyebrow">02 / Short Drama LLM</span>
+                <h3>把短剧叙事和 LLM 体验结合起来</h3>
+                <p>
+                  这个项目聚焦于“叙事体验”与“生成式互动”的结合。相比传统工具型页面，它更强调情绪推进、角色感和故事结构，让用户感受到内容是如何被生成与展开的。
+                </p>
+                <ul>
+                  <li>定位：Narrative / LLM Experience</li>
+                  <li>关注点：剧情节奏、互动反馈、角色感</li>
+                  <li>角色：独立设计与实现</li>
+                </ul>
+                <a class="primary-link" href="https://short-drama-llm.netlify.app/" target="_blank" rel="noreferrer">Visit live site</a>
+              </div>
+
+              <div class="project-detail-panel" data-detail="meditation-in-peace08">
+                <span class="eyebrow">03 / Meditation in Peace</span>
+                <h3>一个强调听觉与舒缓动态的减压页面</h3>
+                <p>
+                  这是一个更情绪化、也更轻盈的作品。我希望页面能在极简视觉里提供安静、柔和、可停留的体验，让音频、计时和细微动画一起构成节奏。
+                </p>
+                <ul>
+                  <li>定位：Wellness / Ambient Interaction</li>
+                  <li>关注点：氛围感、停留感、柔和动效</li>
+                  <li>角色：独立设计与实现</li>
+                </ul>
+                <a class="primary-link" href="https://meditation-in-peace08.netlify.app/" target="_blank" rel="noreferrer">Visit live site</a>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="skills section" id="skills">
+          <div class="section-head reveal">
+            <span class="eyebrow">Skills</span>
+            <h2>能力矩阵</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal glass-card">
+              <h3>Data & Analysis</h3>
+              <p>SQL / Hive、多表关联、数据探查、字段治理、验证集与指标评测。</p>
+            </article>
+            <article class="skill-card reveal glass-card">
+              <h3>Product & Ops</h3>
+              <p>PRD、字段架构、策略拆解、跨团队协同、从问题定义到上线验证。</p>
+            </article>
+            <article class="skill-card reveal glass-card">
+              <h3>AI & Making</h3>
+              <p>AI-Native 开发、交互原型、网页实现、快速验证与个人产品实验。</p>
+            </article>
+            <article class="skill-card reveal glass-card contact-merge">
+              <h3>Contact</h3>
+              <div class="contact-stack">
+                <a href="mailto:Wwddd2023@163.com">Wwddd2023@163.com</a>
+                <a href="tel:15220506800">152 2050 6800</a>
+                <span>立即到岗</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
