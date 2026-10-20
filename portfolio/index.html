@@ -24,7 +24,7 @@
         <div class="intro-content">
           <span class="intro-kicker">PORTFOLIO / 2026</span>
           <h1>朱丹</h1>
-          <p>内容策略 / 产品运营 / AI-Native Builder</p>
+          <p>AI-Native Builder</p>
         </div>
         <div class="intro-line intro-line-bottom"></div>
       </div>
@@ -32,7 +32,7 @@
       <header class="site-header">
         <div>
           <span class="eyebrow">ZHU DAN</span>
-          <h1>Creative Portfolio</h1>
+          <a class="header-about" href="#hero">About me</a>
         </div>
         <button class="ghost-btn" id="enterBtn">Enter</button>
       </header>
@@ -40,31 +40,36 @@
       <main>
         <section class="hero section" id="hero">
           <div class="hero-copy reveal">
-            <span class="eyebrow">About</span>
-            <h2>内容策略 / 产品运营 / AI-Native Builder</h2>
-            <p>
-              我是一名对内容策略、产品体验与 AI 工具实践都保持高敏感度的创作者型运营。过去的经历让我习惯从复杂信息里梳理结构，搭建字段、规则与协作机制，再把它们转化成真正可用的业务方案。
-              我也喜欢亲手把想法做出来：从交互概念到网页原型，从策略推导到上线验证。相比只停留在“提出想法”，我更在意把抽象判断变成具体体验。
-              目前我正在持续打磨一组 AI-Native 的个人网页作品，也在寻找能同时连接内容、产品与创造力的机会。
-            </p>
-            <div class="contact-inline">
-              <a href="mailto:Wwddd2023@163.com">Wwddd2023@163.com</a>
-              <a href="tel:15220506800">152 2050 6800</a>
-              <span>立即到岗</span>
+            <span class="eyebrow">HELLO, I’M ZHU DAN</span>
+            <h2>AI-Native Builder</h2>
+            <div class="intro-explorer">
+              <p class="intro-sentence">我把<button type="button" class="word-key is-selected" data-intro="discover" aria-expanded="true" aria-controls="intro-discover">复杂信息<span aria-hidden="true">＋</span></button>变成<button type="button" class="word-key" data-intro="structure" aria-expanded="false" aria-controls="intro-structure">结构<span aria-hidden="true">＋</span></button>，<br />把想法<button type="button" class="word-key" data-intro="make" aria-expanded="false" aria-controls="intro-make">做出来<span aria-hidden="true">＋</span></button>。</p>
+              <span class="explore-caption">点开一个词，认识我的另一面</span>
+              <div class="intro-note" aria-live="polite">
+                <section id="intro-discover" class="intro-fragment"><span class="note-index">01 · KEEP ASKING</span><h3>先好奇，再找到问题。</h3><p>我是朱丹，一名关注内容策略与产品体验的创作者型运营。无论是音乐线索还是海外市场，我习惯从零散信息里寻找关联，追问业务真正需要解决什么。</p></section>
+                <section id="intro-structure" class="intro-fragment" hidden><span class="note-index">02 · CONNECT THE DOTS</span><h3>让复杂的事情，有迹可循。</h3><p>从字段架构、标签规则到协作机制，我喜欢把模糊的问题拆成清楚的结构，再与不同团队一起，把判断推进成可用的业务方案。</p></section>
+                <section id="intro-make" class="intro-fragment" hidden><span class="note-index">03 · MAKE IT REAL</span><h3>想法，要能被体验。</h3><p>我用 AI 把交互概念做成网页和原型，再通过体验继续打磨。目前正在持续探索个人作品，也期待连接内容、产品与创造力的新机会。</p></section>
+              </div>
             </div>
+
           </div>
 
           <div class="hero-stage reveal" id="heroStage" data-mode="experience">
-            <article class="hero-card is-active" data-target="experience" tabindex="0">
+            <article class="hero-card is-active" data-target="experience" tabindex="0" role="button" aria-label="探索我的经历" aria-pressed="true"><svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="15" width="34" height="25" rx="5"/><path d="M17 15V10a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v5M7 25a42 42 0 0 0 34 0M21 25h6v6h-6z"/></svg>
               <span class="hero-card-index">01</span>
               <h3>Experience</h3>
-              <p>内容策略、产运协同、结构化问题解决。</p>
+              <p>内容策略、产运协同、结构化问题解决。</p><span class="card-action">查看经历 <span aria-hidden="true">↗</span></span>
             </article>
-            <article class="hero-card" data-target="projects" tabindex="0">
+            <article class="hero-card" data-target="projects" tabindex="0" role="button" aria-label="探索我的作品" aria-pressed="false"><svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m24 5 5 14 14 5-14 5-5 14-5-14-14-5 14-5ZM38 4v8M34 8h8"/></svg>
               <span class="hero-card-index">02</span>
               <h3>Projects</h3>
-              <p>AI-Native 网页、互动原型与个人实验。</p>
+              <p>AI-Native 网页、互动原型与个人实验。</p><span class="card-action">探索作品 <span aria-hidden="true">↗</span></span>
             </article>
+            <div class="deck-controls" aria-label="首页卡牌切换">
+              <button type="button" data-deck="experience" aria-pressed="true">01 经历</button>
+              <button type="button" data-deck="projects" aria-pressed="false">02 作品</button>
+              <span>点击抽牌 · 左右滑动</span>
+            </div>
           </div>
 
           <aside class="hero-detail reveal" id="heroDetail">
@@ -183,9 +188,9 @@
 
           <div class="project-layout">
             <div class="project-grid" id="projectGrid">
-              <a class="project-card reveal is-active" data-project="discovery-pulse" data-url="https://discovery-pulse.netlify.app/" href="https://discovery-pulse.netlify.app/" target="_blank" rel="noreferrer">
+              <article class="project-card reveal is-active" data-project="discovery-pulse" data-url="https://discovery-pulse.netlify.app/" tabindex="0">
                 <span class="project-number">01</span>
-                <div class="project-cover gradient-a">
+                <div class="project-cover gradient-a"><button class="cover-play" type="button" aria-label="移动或点按 · 扫描信号"></button><span class="play-hint">移动或点按 · 扫描信号</span>
                   <div class="cover-badge">LIVE · 01</div>
                   <div class="pulse-grid"></div>
                   <svg class="pulse-icon" viewBox="0 0 120 72" preserveAspectRatio="none" aria-hidden="true">
@@ -195,33 +200,33 @@
                   <div class="cover-caption cover-caption-bottom">Discovery Pulse</div>
                 </div>
                 <div class="project-body">
-                  <h3>Discovery Pulse</h3>
+                  <h3><svg class="project-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="21" cy="21" r="12"/><path d="m30 30 11 11M13 22h5l3-7 4 12 3-5h3"/></svg><span>Discovery Pulse</span><span class="project-arrow" aria-hidden="true">↗</span></h3>
                   <p>信息洞察与探索体验</p>
-                  <div class="project-tags"><span>洞察探索</span><span>信息结构</span></div>
+                  <div class="project-tags"><span>洞察探索</span><span>信息结构</span></div><a class="project-open" href="https://discovery-pulse.netlify.app/" target="_blank" rel="noreferrer">打开项目 <span aria-hidden="true">↗</span></a>
                 </div>
-              </a>
+              </article>
 
-              <a class="project-card reveal" data-project="short-drama-llm" data-url="https://short-drama-llm.netlify.app/" href="https://short-drama-llm.netlify.app/" target="_blank" rel="noreferrer">
+              <article class="project-card reveal" data-project="short-drama-llm" data-url="https://short-drama-llm.netlify.app/" tabindex="0">
                 <span class="project-number">02</span>
-                <div class="project-cover gradient-b">
+                <div class="project-cover gradient-b"><button class="cover-play" type="button" aria-label="点按 · 翻开下一幕"></button><span class="play-hint">点按 · 翻开下一幕</span>
                   <div class="cover-badge">LIVE · 02</div>
                   <div class="film-frame"></div>
                   <div class="script-glow"></div>
                   <div class="script-lines" aria-hidden="true">
                     <span></span><span></span><span></span>
                   </div>
-                  <div class="cover-caption cover-caption-center">A short drama<br />in three acts.</div>
+                  <div class="cover-caption cover-caption-center"><span class="drama-act">ACT I · 相遇</span><br /><span class="drama-line" aria-live="polite">“如果，我们从未见过？”</span></div>
                 </div>
                 <div class="project-body">
-                  <h3>Short Drama LLM</h3>
+                  <h3><svg class="project-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="9" width="34" height="30" rx="4"/><path d="M14 9v30M34 9v30M7 18h7M7 30h7M34 18h7M34 30h7m-20-9 8 5-8 5z"/></svg><span>Short Drama LLM</span><span class="project-arrow" aria-hidden="true">↗</span></h3>
                   <p>短剧叙事与生成式交互</p>
-                  <div class="project-tags"><span>叙事生成</span><span>LLM</span></div>
+                  <div class="project-tags"><span>叙事生成</span><span>LLM</span></div><a class="project-open" href="https://short-drama-llm.netlify.app/" target="_blank" rel="noreferrer">打开项目 <span aria-hidden="true">↗</span></a>
                 </div>
-              </a>
+              </article>
 
-              <a class="project-card reveal" data-project="meditation-in-peace08" data-url="https://meditation-in-peace08.netlify.app/" href="https://meditation-in-peace08.netlify.app/" target="_blank" rel="noreferrer">
+              <article class="project-card reveal" data-project="meditation-in-peace08" data-url="https://meditation-in-peace08.netlify.app/" tabindex="0">
                 <span class="project-number">03</span>
-                <div class="project-cover gradient-c">
+                <div class="project-cover gradient-c"><button class="cover-play" type="button" aria-label="按住或按空格 · 跟随呼吸"></button><span class="play-hint">按住或按空格 · 跟随呼吸</span>
                   <div class="cover-badge">LIVE · 03</div>
                   <div class="breathe-orb">
                     <span class="breathe-ring breathe-ring-1"></span>
@@ -231,11 +236,11 @@
                   <div class="cover-caption cover-caption-soft">breathe in.</div>
                 </div>
                 <div class="project-body">
-                  <h3>Meditation in Peace</h3>
+                  <h3><svg class="project-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 39C9 39 5 30 7 20c8 0 14 5 17 13 3-8 9-13 17-13 2 10-2 19-17 19ZM24 33c-8-7-8-17 0-25 8 8 8 18 0 25Z"/></svg><span>Meditation in Peace</span><span class="project-arrow" aria-hidden="true">↗</span></h3>
                   <p>白噪音冥想与舒缓动效</p>
-                  <div class="project-tags"><span>冥想疗愈</span><span>音频体验</span></div>
+                  <div class="project-tags"><span>冥想疗愈</span><span>音频体验</span></div><a class="project-open" href="https://meditation-in-peace08.netlify.app/" target="_blank" rel="noreferrer">打开项目 <span aria-hidden="true">↗</span></a>
                 </div>
-              </a>
+              </article>
             </div>
 
             <aside class="project-detail reveal glass-card" id="projectDetail">
@@ -285,31 +290,38 @@
         </section>
 
         <section class="skills section" id="skills">
-          <div class="section-head reveal">
-            <span class="eyebrow">Skills</span>
-            <h2>能力矩阵</h2>
-          </div>
-          <div class="skills-grid">
-            <article class="skill-card reveal glass-card">
-              <h3>Data & Analysis</h3>
-              <p>SQL / Hive、多表关联、数据探查、字段治理、验证集与指标评测。</p>
-            </article>
-            <article class="skill-card reveal glass-card">
-              <h3>Product & Ops</h3>
-              <p>PRD、字段架构、策略拆解、跨团队协同、从问题定义到上线验证。</p>
-            </article>
-            <article class="skill-card reveal glass-card">
-              <h3>AI & Making</h3>
-              <p>AI-Native 开发、交互原型、网页实现、快速验证与个人产品实验。</p>
-            </article>
-            <article class="skill-card reveal glass-card contact-merge">
-              <h3>Contact</h3>
-              <div class="contact-stack">
-                <a href="mailto:Wwddd2023@163.com">Wwddd2023@163.com</a>
-                <a href="tel:15220506800">152 2050 6800</a>
-                <span>立即到岗</span>
+          <div class="section-head reveal"><span class="eyebrow">HOW I WORK</span><h2>从问题，到作品。</h2><p class="work-subtitle">不只是会什么。点亮一个步骤，看看我怎么做。</p></div>
+          <div class="workbench reveal" data-step="discover">
+            <div class="work-path" role="group" aria-label="探索工作流程">
+              <button class="work-step is-selected" type="button" data-step="discover" aria-pressed="true" aria-controls="work-details"><span>01</span>发现问题<span aria-hidden="true">↗</span></button>
+              <button class="work-step" type="button" data-step="structure" aria-pressed="false" aria-controls="work-details"><span>02</span>拆解结构<span aria-hidden="true">↗</span></button>
+              <button class="work-step" type="button" data-step="build" aria-pressed="false" aria-controls="work-details"><span>03</span>动手搭建<span aria-hidden="true">↗</span></button>
+              <button class="work-step" type="button" data-step="iterate" aria-pressed="false" aria-controls="work-details"><span>04</span>验证迭代<span aria-hidden="true">↗</span></button>
+            </div>
+            <div class="work-surface">
+              <div class="work-visual" aria-hidden="true">
+                <div class="surface-label"><span class="status-light"></span><span id="work-status">OBSERVING · 寻找关联</span></div>
+                <div class="signal-nodes"><span>用户反馈</span><span>市场信号</span><span>内容线索</span><span>业务目标</span><span>数据观察</span><span>体验细节</span></div>
+                <div class="signal-core"><span class="core-symbol">?</span><span class="core-caption">真正的问题是什么</span></div>
+                <div class="mini-prototype"><div class="mini-top"><i></i><i></i><i></i></div><div class="mini-body"><div class="mini-sidebar"></div><div class="mini-content"><span></span><span></span><div class="mini-tiles"><i></i><i></i><i></i></div></div></div><span class="feedback-chip">↗ 反馈进入下一轮</span></div>
+                <span class="surface-footnote">一个工作方式的缩影</span>
               </div>
-            </article>
+              <div class="work-details" id="work-details" aria-live="polite">
+                <span class="note-index" id="work-index">01 · DISCOVER</span><h3 id="work-title">先找到值得解决的问题。</h3><p id="work-description">从用户、市场与业务信息中交叉观察，把零散线索变成可以验证的问题。</p>
+                <div class="work-tools" id="work-tools"><span>竞品研究</span><span>数据探查</span><span>SQL / Hive</span></div>
+                <div class="work-evidence"><span>经历中的一个例子</span><p id="work-example">在滴滴巴西业务中，抽样 100+ 商户，构建三层竞争图谱，识别高潜转化对象。</p><a class="inline-link" id="work-link" href="#experience">查看相关经历</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact section reveal" id="contact">
+          <span class="eyebrow">CONTACT</span>
+          <h2>让下一个想法，成为现实。</h2>
+          <p>欢迎聊聊内容、产品，以及 AI 带来的新可能。</p>
+          <div class="contact-stack">
+            <a href="mailto:Wwddd2023@163.com"><span aria-hidden="true">✉</span> Wwddd2023@163.com</a>
+            <a href="tel:15220506800"><span aria-hidden="true">↗</span> 152 2050 6800</a>
+            <span>立即到岗</span>
           </div>
         </section>
       </main>
